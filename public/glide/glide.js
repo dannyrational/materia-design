@@ -1,4 +1,5 @@
 const auto = {
+    type: 'carousel',
     autoplay: 5000,
     perView: 1,
     gap: 0,
