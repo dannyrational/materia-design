@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/main.css">
+    <link rel="stylesheet" href="public/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css"
+        integrity="sha512-wYsVD8ho6rJOAo1Xf92gguhOGQ+aWgxuyKydjyEax4bnuEmHUt6VGwgpUqN8VlB4w50d0nt+ZL+3pgaFMAmdNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.min.css"
+        integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Inicio - Materia</title>
+</head>
+
+<body class="font-lato">
+    <!-- ? Mobile Menu Bar -->
+    <div class="fixed z-40 w-full mobile-menu-bar bg-primary">
+        <div class="container-fluid">
+            <div class="justify-between row">
+                <div class="p-0 col-4">
+                    <a href="#">
+                        <img class="w-16" src="media/logo.jpg" alt="">
+                    </a>
+                </div>
+                <div class="flex items-center justify-center col-3 sm:col-2">
+                    <a href="#" class="flex flex-col items-start p-2 space-y-1 mobile-menu-btn-open">
+                        <i class="text-2xl text-gray-200 fas fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ? Mobile Menu -->
+    <div
+        class="fixed top-0 right-0 z-50 w-64 h-screen transition duration-500 transform translate-x-full mobile-menu bg-secondary">
+        <div class="container-fluid">
+            <div class="flex-col row">
+                <div class="self-end py-2 mb-20 col-3">
+                    <a href="#" class="flex flex-col items-end p-2 mr-2 space-y-1 mobile-menu-btn-close">
+                        <i class="text-2xl text-gray-200 fas fa-times"></i>
+                    </a>
+                </div>
+                <div class="col-12">
+                    <div class="flex flex-col space-y-2 text-sm tracking-wide text-gray-400">
+                        <a class="py-2 transition duration-500 border-b border-gray-700 border-opacity-50 hover:text-white"
+                            href="">Inicio</a>
+                        <a class="py-2 transition duration-500 border-b border-gray-700 border-opacity-50 hover:text-white"
+                            href="">Galeria</a>
+                        <a class="py-2 transition duration-500 border-b border-gray-700 border-opacity-50 hover:text-white"
+                            href="">Acerca</a>
+                        <a class="py-2 transition duration-500 border-b border-gray-700 border-opacity-50 hover:text-white"
+                            href="">Contactanos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ? Slider -->
+    <div class="relative z-0">
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="relative glide__slide">
+                        <img class="object-cover object-bottom w-full h-screen" src="media/slider-1.jpg" alt="">
+                        <div class="absolute top-0 left-0 right-0 h-full bg-gray-600 overlay bg-opacity-40">
+                        </div>
+                    </li>
+                    <li class="relative glide__slide">
+                        <img class="object-cover object-bottom w-full h-screen" src="media/slider-2.jpg" alt="">
+                        <div class="absolute top-0 left-0 right-0 h-full bg-gray-600 overlay bg-opacity-40">
+                        </div>
+                    </li>
+                    <li class="relative glide__slide">
+                        <img class="object-cover object-bottom w-full h-screen" src="media/slider-3.jpg" alt="">
+                        <div class="absolute top-0 left-0 right-0 h-full bg-gray-600 overlay bg-opacity-40">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="glide__bullets" data-glide-el="controls[nav]">
+                <button class="glide__bullet" data-glide-dir="=0"></button>
+                <button class="glide__bullet" data-glide-dir="=1"></button>
+                <button class="glide__bullet" data-glide-dir="=2"></button>
+            </div>
+        </div>
+
+        <!-- ? Slider Jumbotron -->
+        <div class="absolute left-0 right-0 top-1/4">
+            <div class="container flex items-center justify-center">
+                <div class="flex flex-col w-full row">
+                    <div class="mb-4 text-white col-12 max-w-440 sm:max-w-544">
+                        <h1
+                            class="mb-2 text-5xl font-normal tracking-wide md:text-6xl xl:text-7xl sm:mb-3 font-playfair">
+                            Hacemos
+                            los
+                            muebles
+                            perfectos
+                            para
+                            tu
+                            hogar
+                        </h1>
+                        <p class="text-base font-light md:text-lg">Contigo desde 2019</p>
+                    </div>
+                    <div class="space-x-2 col-12">
+                        <a class="inline-block px-5 py-3 text-sm transition duration-300 transform bg-white border-primary text-primary hover:scale-95 md:text-base"
+                            href="#">Galeria</a>
+                        <a class="inline-block px-5 py-3 text-sm text-white transition duration-300 transform border bg-primary hover:scale-95 md:text-base"
+                            href="#">Contactanos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 md:col-4 md:p-0">
+                    <div class="w-full bg-top bg-cover h-96" style="background-image: url('media/logo.jpg');">
+                    </div>
+                </div>
+                <div class="col-12 md:col-4">
+                    <div>
+                        <h5>Donde trabajamos</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus minus molestiae
+                            repellendus, veniam error pariatur?</p>
+                    </div>
+                    <div>
+                        <h5>Contactanos</h5>
+                        <p>Trabajamos de Lunes a Viernes de 8:00 a 18:00 </p>
+                        <p>Llamanos al +502 3000 9999</p>
+                        <p>Email: info@materia.com</p>
+                    </div>
+                    <div>
+                        <h5>Ubicacion</h5>
+                        <p>1213 Evergreen Lane <br> Pomona CA 91766</p>
+                    </div>
+                </div>
+                <div class="col-12 md:col-4 md:p-0">
+                    <div class="w-full bg-top bg-cover h-96" style="background-image: url('media/temp-pic-1.jpg');">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"
+        integrity="sha512-BXASbMmKLu+RC5TDnkupyhvrjiOQXILh/5zgIS8k5JAC71a73lNweVEg/X+9XJQ7GK22PH9WpztY3zqrji+xrQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="public/glide.js"></script>
+    <script src="public/script.js"></script>
+</body>
+
+</html>
