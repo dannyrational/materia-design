@@ -9,6 +9,9 @@ module.exports = {
       colors: {
         trueGray: colors.trueGray,
         coolGray: colors.coolGray,
+      },
+      fontFamily: {
+        'montserrat': ['Montserrat', 'sans-serif'],
       }
     },
   },
