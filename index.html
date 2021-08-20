@@ -6,7 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio | Materia Designs</title>
+
+    <!-- Main Style Sheet -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Font Awesome -->
+    <script defer src="assets/fontawesome/brands.min.js"></script>
+    <script defer src="assets/fontawesome/solid.min.js"></script>
+    <script defer src="assets/fontawesome/fontawesome.min.js"></script>
 </head>
 
 <body>
@@ -22,7 +29,7 @@
             </div>
             <!-- Mobile Menu Button -->
             <div class="col-span-2 flex items-center justify-end">
-                <a href="#" class="flex flex-col mr-4 p-1" id="mobileMenuBtn">
+                <a href="#" class="flex flex-col mr-4 p-1" id="mobileMenuOpenBtn" onclick="slideMenuOut()">
                     <div class="w-6 h-0.5 bg-trueGray-600 mb-1.5"></div>
                     <div class="w-6 h-0.5 bg-trueGray-600 mb-1.5"></div>
                     <div class="w-6 h-0.5 bg-trueGray-600"></div>
@@ -32,7 +39,12 @@
     </nav>
 
     <!-- Slide Out Menu -->
-    <div class="fixed top-0 right-0 z-50 bg-coolGray-800 h-screen w-64 text-trueGray-300">
+    <div class="fixed top-0 right-0 z-50 bg-coolGray-800 h-screen w-64 text-trueGray-300 translate-x-full transition-all duration-200"
+        id="slideOutMenu">
+        <!-- Close Menu Button -->
+        <a href="#" class="absolute top-3 right-4 flex flex-col p-1" id="mobileMenuCloseBtn" onclick="slideMenuIn()">
+            <i class="fa fa-times text-3xl"></i>
+        </a>
         <!-- Menu Links -->
         <div class="mt-32">
             <a href="" class="block border-b border-opacity-10 p-3">Inicio</a>
@@ -40,13 +52,19 @@
             <a href="" class="block border-b border-opacity-10 p-3">Contacto</a>
         </div>
         <!-- Social Media -->
-        <div>
-
+        <div class="absolute bottom-0 w-full mt-4 p-3 flex justify-center">
+            <a href="" class="inline-block p-1">
+                <i class="fab fa-facebook-square text-2xl"></i>
+            </a>
+            <a href="" class="inline-block p-1">
+                <i class="fab fa-instagram-square text-2xl"></i>
+            </a>
         </div>
     </div>
 
     <!-- Section One -->
     <section></section>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
