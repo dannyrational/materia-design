@@ -11,7 +11,8 @@ module.exports = {
         coolGray: colors.coolGray,
       },
       fontFamily: {
-        'montserrat': ['Montserrat', 'sans-serif'],
+        'karla': ['Karla', 'sans-serif'],
+        'rubik': ['Rubik', 'sans-serif']
       }
     },
   },
