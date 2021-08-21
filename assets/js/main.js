@@ -17,8 +17,3 @@ function slideMenuIn() {
     // Hide slideOutMenuOverlay
     slideOutMenuOverlay.classList.add('hidden')
 }
-
-for (let i = 1; i < 20; i += 2) {
-    console.log(i)
-
-};

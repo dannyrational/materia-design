@@ -5,11 +5,124 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inicio | Materia Designs</title>
+
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="assets/fonts/google-fonts.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
 </head>
 
-<body>
+<body class="font-karla bg-trueGray-100">
+    <!-- Tailwind Breakpoint Classes -->
+    <div class="sm:hidden md:hidden lg:hidden xl:hidden 2xl:hidden"></div>
 
+    <!--? Navigation Bar -->
+    <nav class="bg-trueGray-100">
+        <div class="grid grid-cols-12">
+            <!-- Nav Logo -->
+            <div class="col-span-10 md:col-span-6">
+                <a href="index.html" class="inline-block float-left">
+                    <img src="assets/images/navbar-logo-3.png" alt="">
+                </a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <div class="flex items-center justify-end col-span-2 md:hidden">
+                <a href="#" class="flex p-1 mr-3" id="mobileMenuOpenBtn" onclick="slideMenuOut()">
+                    <i class="text-3xl fad fa-bars text-primary"></i>
+                </a>
+            </div>
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex md:items-stretch md:justify-end md:col-span-6 text-trueGray-600 ">
+                <!-- Desktop Links -->
+                <a href="index.html"
+                    class="flex items-center px-6 transition-colors duration-200 lg:text-lg hover:bg-trueGray-200"><span>Inicio</span></a>
+                <a href="catalogo.html"
+                    class="flex items-center px-6 transition-colors duration-200 lg:text-lg hover:bg-trueGray-200"><span>Catalogo</span></a>
+                <a href="contacto.html"
+                    class="flex items-center px-6 transition-colors duration-200 lg:text-lg bg-trueGray-200"><span>Contáctanos</span></a>
+                <!-- Desktop Social Media -->
+                <div class="flex">
+                    <a href="https://www.facebook.com/materiadesigngt-108208537360324/?ref=page_internal"
+                        target="_blank" rel="noopener"
+                        class="flex items-center px-3 transition-colors duration-200 bg-primary hover:bg-trueGray-200 group">
+                        <i
+                            class="text-2xl text-white transition-colors duration-200 group-hover:text-blue-600 fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/materiadesigngt/" target="_blank" rel="noopener"
+                        class="flex items-center px-2 transition-colors duration-200 bg-primary hover:bg-trueGray-200 group">
+                        <i
+                            class="text-2xl text-white transition-colors duration-200 fab fa-instagram group-hover:text-rose-500"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--? Slide Out Menu -->
+    <div class="fixed top-0 right-0 z-50 w-64 h-screen transition-all duration-200 translate-x-full bg-primary text-trueGray-200 md:hidden"
+        id="slideOutMenu">
+        <!-- Close Menu Button -->
+        <a href="#" class="absolute flex p-1 top-3 right-3" id="mobileMenuCloseBtn" onclick="slideMenuIn()">
+            <i class="text-3xl fad fa-times"></i>
+        </a>
+        <!-- Menu Links -->
+        <div class="mt-32 text-sm font-rubik sm:text-base">
+            <a href="index.html"
+                class="block p-3 transition-colors duration-200 border-b border-opacity-10 hover:text-white">Inicio</a>
+            <a href="catalogo.html"
+                class="block p-3 transition-colors duration-200 border-b border-opacity-10 hover:text-white">Catalogo</a>
+            <a href="contacto.html"
+                class="block p-3 transition-colors duration-200 border-b border-opacity-10 hover:text-white">Contáctanos</a>
+        </div>
+        <!-- Social Media -->
+        <div class="absolute bottom-0 flex justify-center w-full p-3 mt-4">
+            <a href="https://www.facebook.com/materiadesigngt-108208537360324/?ref=page_internal" target="_blank"
+                rel="noopener" class="p-2 group">
+                <i
+                    class="text-2xl transition-colors duration-300 group-hover:text-blue-600 hover:text-white fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/materiadesigngt/" target="_blank" rel="noopener" class="p-2 group">
+                <i
+                    class="text-2xl transition-colors duration-300 group-hover:text-rose-500 hover:text-white fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+
+    <!--? Mobile Menu Overlay -->
+    <div class="fixed top-0 z-40 hidden w-screen h-screen bg-opacity-25 cursor-pointer bg-trueGray-900 md:hidden"
+        id="slideOutMenuOverlay" onclick="slideMenuIn()">
+    </div>
+
+    <!--? Section One -->
+    <section class="">
+
+    </section>
+
+    <!--? Section Two -->
+    <section class="">
+
+    </section>
+
+    <!--? Footer -->
+    <footer class="flex flex-col items-center p-8 text-sm text-trueGray-200 bg-secondary">
+        <div class="mb-8 space-x-2 text-sm font-rubik sm:text-base">
+            <a href="index.html"
+                class="inline-block px-2 py-1 transition-colors duration-200 hover:text-white">Inicio</a>
+            <a href="catalogo.html"
+                class="inline-block px-2 py-1 transition-colors duration-200 hover:text-white">Catalogo</a>
+            <a href="contacto.html"
+                class="inline-block px-2 py-1 transition-colors duration-200 hover:text-white">Contáctanos</a>
+        </div>
+        <p class="text-xs">Created by <a href="https://www.bedesigns.net" target="_blank" rel="noopener"
+                class="inline-block font-bold transition-colors duration-200 hover:text-yellow-500">BeDesigns</a>
+        </p>
+    </footer>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
