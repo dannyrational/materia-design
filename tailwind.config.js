@@ -9,6 +9,9 @@ module.exports = {
       colors: {
         trueGray: colors.trueGray,
         coolGray: colors.coolGray,
+        rose: colors.rose,
+        primary: '#756566',
+        secondary: '#483839',
       },
       fontFamily: {
         'karla': ['Karla', 'sans-serif'],
