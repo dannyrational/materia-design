@@ -108,36 +108,35 @@
                     <p class="text-sm font-light sm:text-base lg:text-lg">Lorem ipsum dolor sit amet consectetur,
                         adipisicing elit. Asperiores, voluptatem?</p>
                 </div>
-                <div class="mb-6">
+                <div class="mb-6 text-sm sm:text-base lg:text-lg">
                     <div class="flex items-center mb-2 space-x-4">
-                        <i class="w-6 text-sm text-yellow-500 fad fa-phone sm:text-base lg:text-lg"></i>
-                        <p class="text-sm font-light uppercase sm:text-base lg:text-lg">Teléfono
+                        <i class="w-6 text-yellow-500 fad fa-phone"></i>
+                        <p class="font-light uppercase">Teléfono
                         </p>
                     </div>
                     <div class="flex items-center space-x-4">
-                        <i class="w-6 text-sm text-yellow-500 fas fa-horizontal-rule sm:text-base lg:text-lg"></i>
-                        <p class="text-sm sm:text-base lg:text-lg">+ 502 9999 9999</p>
+                        <i class="w-6 text-yellow-500 fas fa-horizontal-rule"></i>
+                        <p class="">+ 502 9999 9999</p>
                     </div>
                 </div>
-                <div class="mb-6">
+                <div class="mb-6 text-sm sm:text-base lg:text-lg">
                     <div class="flex items-center mb-2 space-x-4">
-                        <i class="w-6 text-sm text-yellow-500 fab fa-whatsapp sm:text-base lg:text-lg"></i>
-                        <p class="text-sm font-light uppercase sm:text-base lg:text-lg">WhatsApp</p>
+                        <i class="w-6 text-yellow-500 fab fa-whatsapp"></i>
+                        <p class="font-light uppercase">WhatsApp</p>
                     </div>
                     <div class="flex items-center space-x-4">
-                        <i class="w-6 text-sm text-yellow-500 fas fa-horizontal-rule sm:text-base lg:text-lg"></i>
-                        <p class="text-sm sm:text-base lg:text-lg">+502 9999 9999</p>
+                        <i class="w-6 text-yellow-500 fas fa-horizontal-rule"></i>
+                        <p class="">+502 9999 9999</p>
                     </div>
                 </div>
-                <div>
+                <div class="text-sm sm:text-base lg:text-lg">
                     <div class="flex items-center mb-2 space-x-4">
-                        <i class="w-6 text-sm text-yellow-500 fad fa-mailbox sm:text-base lg:text-lg"></i>
-                        <p class="text-sm font-light uppercase sm:text-base lg:text-lg">Email</p>
+                        <i class="w-6 text-yellow-500 fad fa-mailbox"></i>
+                        <p class="font-light uppercase">Email</p>
                     </div>
                     <div class="flex items-center space-x-4">
-                        <i class="w-6 text-sm text-yellow-500 fas fa-horizontal-rule sm:text-base lg:text-lg"></i>
-                        <a class="text-sm sm:text-base lg:text-lg" href="emailto:info@materiadesign.com"
-                            rel="noopener">+info@materiadesign.com</a>
+                        <i class="w-6 text-yellow-500 fas fa-horizontal-rule"></i>
+                        <a class="" href="emailto:info@materiadesign.com" rel="noopener">+info@materiadesign.com</a>
                     </div>
                 </div>
             </div>
@@ -149,12 +148,13 @@
     </section>
 
     <!--? Section Two -->
-    <section class="bg-primary">
+    <section class="bg-trueGray-200">
         <div class="grid grid-cols-12 text-trueGray-600">
-            <div class="col-span-12 px-8 py-12 md:col-span-6">
-                <h2 class="mb-4 text-2xl font-light lg:text-3xl text-trueGray-200 font-rubik">Escribenos por este Medio
+            <!-- Contact Form -->
+            <div class="col-span-12 px-8 py-12 xl:px-24 md:col-span-6">
+                <h2 class="mb-8 text-2xl font-light lg:text-3xl font-rubik">Escribenos por Aca
                 </h2>
-                <form action="" class="grid col-span-12 gap-y-2 lg:gap-x-2">
+                <form name="contact" action="POST" data-netlify="true" class="grid col-span-12 gap-y-2 lg:gap-x-2">
                     <input type="text" name="name" id="name" placeholder="Nombre"
                         class="col-span-12 text-sm lg:col-span-6 sm:text-base lg:text-lg">
                     <input type="email" name="email" id="email" placeholder="Correo Electrónico "
@@ -163,7 +163,42 @@
                         class="col-span-12 text-sm sm:text-base lg:text-lg">
                     <textarea name="mensaje" id="mensaje" placeholder="Mensaje" cols="30" rows="8"
                         class="col-span-12 text-sm resize-none sm:text-base lg:text-lg"></textarea>
+                    <div class="col-span-12">
+                        <button type="button"
+                            class="float-right px-8 py-2 text-white duration-200 bg-white bg-yellow-500 hover:bg-yellow-600">Enviar</button>
+                    </div>
                 </form>
+            </div>
+            <!-- Contact Info -->
+            <div class="flex flex-col justify-center col-span-12 px-8 py-12 md:col-span-6 xl:px-24">
+                <div class="mb-16 text-sm sm:text-base lg:text-lg">
+                    <div class="flex items-center mb-2 space-x-4">
+                        <i class="w-6 text-yellow-500 fad fa-map-marker-check"></i>
+                        <p class="text-sm font-light uppercase sm:text-base lg:text-lg">Direccion
+                        </p>
+                    </div>
+                    <div class="flex space-x-4">
+                        <i class="w-6 text-yellow-500 fas fa-horizontal-rule"></i>
+                        <div>
+                            <p class="">15 ave. 10-80 zona 13</p>
+                            <p class="">Ciudad de Guatemala, Guatemala</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-sm sm:text-base lg:text-lg">
+                    <div class="flex items-center mb-2 space-x-4">
+                        <i class="w-6 text-yellow-500 fad fa-clock"></i>
+                        <p class="text-sm font-light uppercase sm:text-base lg:text-lg">Horario
+                        </p>
+                    </div>
+                    <div class="flex space-x-4">
+                        <i class="w-6 text-yellow-500 fas fa-horizontal-rule"></i>
+                        <div>
+                            <p class="">Trabajamos de Lunes a Viernes</p>
+                            <p class="">De: 8:00 a 17:00</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
