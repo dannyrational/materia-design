@@ -15,6 +15,10 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body class="font-karla bg-trueGray-100">
@@ -99,16 +103,19 @@
     </div>
 
     <!--? Section One -->
-    <section class="flex items-center w-full bg-bottom bg-cover h-[500px] md:h-[800px]"
+    <section class="flex items-center w-full bg-bottom bg-cover h-[500px] md:h-[800px] overflow-hidden"
         style="background-image: url('assets/images/section-one_img-1.jpg');">
         <div class="grid w-full grid-cols-12">
             <div class="col-span-12 p-3 text-white max-w-[425px] sm:max-w-[616px] lg:max-w-[685px] md:ml-12 lg:ml-20">
-                <h1 class="mb-2 text-4xl font-medium sm:text-5xl lg:text-6xl font-rubik ">Los Muebles
+                <h1 class="mb-2 text-4xl font-medium sm:text-5xl lg:text-6xl font-rubik" data-aos="fade-right"
+                    data-aos-duration="2000">Los Muebles
                     Perfectos
                     para tu
                     Hogar</h1>
-                <p class="mb-4 text-sm sm:text-base lg:text-lg">Contigo desde 2019</p>
-                <button type="button"
+                <p class="mb-4 text-sm sm:text-base lg:text-lg" data-aos="fade-right" data-aos-duration="2000"
+                    data-aos-delay="250">Contigo
+                    desde 2019</p>
+                <button type="button" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="500"
                     class="px-6 py-2 font-bold bg-yellow-500 hover:bg-yellow-600 lg:text-xl">Contáctanos</button>
             </div>
         </div>
@@ -123,7 +130,8 @@
                 <img class="hidden object-cover h-full md:block" src="assets/images/inicio-img-4.jpg" alt="">
             </div>
             <!-- Contact Info -->
-            <div class="flex flex-col justify-center col-span-12 py-6 px-14 md:px-8 md:col-span-4">
+            <div class="flex flex-col justify-center col-span-12 py-6 px-14 md:px-8 md:col-span-4" data-aos="zoom-in"
+                data-aos-duration="1000" data-aos-once="true">
                 <div class="mb-8 text-sm font-light sm:text-base lg:text-lg text-trueGray-600">
                     <h3 class="mb-2 font-semibold text-yellow-500 uppercase font-rubik">¿Donde Estamos?</h3>
                     <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
@@ -168,7 +176,16 @@
                 class="inline-block font-bold transition-colors duration-200 hover:text-yellow-500">BeDesigns</a>
         </p>
     </footer>
+
+    <!-- Main JS     -->
     <script src="assets/js/main.js"></script>
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>
