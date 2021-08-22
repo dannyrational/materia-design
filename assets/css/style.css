@@ -818,10 +818,6 @@ select {
   grid-column: span 12 / span 12;
 }
 
-.float-right {
-  float: right;
-}
-
 .float-left {
   float: left;
 }
