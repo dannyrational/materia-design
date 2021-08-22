@@ -15,6 +15,10 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body class="font-karla bg-trueGray-100">
@@ -99,12 +103,15 @@
     </div>
 
     <!--? Section One -->
-    <section class="">
+    <section class="overflow-hidden">
         <div class="grid grid-cols-12 text-trueGray-600 xl:w-[1280px] xl:mx-auto">
             <div class="flex flex-col items-center justify-center col-span-12 p-10 pt-20 md:items-start">
-                <img class="mb-8" src="assets/images/carpenter.png" alt="">
-                <h2 class="mb-4 text-4xl font-medium sm:text-5xl font-rubik">Nuestro Trabajo</h2>
-                <p class="text-sm font-light sm:text-base lg:text-lg">
+                <img class="mb-8" src="assets/images/carpenter.png" alt="" data-aos="fade-right"
+                    data-aos-duration="2000">
+                <h2 class="mb-4 text-4xl font-medium sm:text-5xl font-rubik" data-aos="fade-right"
+                    data-aos-duration="2000" data-aos-delay="250">Nuestro Trabajo</h2>
+                <p class="text-sm font-light sm:text-base lg:text-lg" data-aos="fade-right" data-aos-duration="2000"
+                    data-aos-delay="500">
                     Diseñamos muebles que se adaptan a las necesidades de cada cliente. Es importante crear armonía
                     entre los espacios interiores y exteriores. Adaptando así el diseño de
                     cada
@@ -119,42 +126,48 @@
             <!-- Productos -->
             <div class="col-span-12 md:col-span-6">
                 <div class="overflow-hidden">
-                    <img class="transition-all duration-300 hover:scale-110" src="assets/images/producto-1.jpg" alt="">
+                    <img class="transition-all duration-300 hover:scale-110" src="assets/images/producto-1.jpg" alt=""
+                        data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
                 </div>
                 <p class="p-3 text-sm text-yellow-500 bg-white sm:text-base lg:text-lg font-rubik">
                     Descripción</p>
             </div>
             <div class="col-span-12 md:col-span-6">
                 <div class="overflow-hidden">
-                    <img class="transition-all duration-300 hover:scale-110" src="assets/images/producto-2.jpg" alt="">
+                    <img class="transition-all duration-300 hover:scale-110" src="assets/images/producto-2.jpg" alt=""
+                        data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
                 </div>
                 <p class="p-3 text-sm text-yellow-500 bg-white sm:text-base lg:text-lg font-rubik">
                     Descripción</p>
             </div>
             <div class="col-span-12 md:col-span-6">
                 <div class="overflow-hidden">
-                    <img class="transition-all duration-300 hover:scale-110" src="assets/images/producto-3.jpg" alt="">
+                    <img class="transition-all duration-300 hover:scale-110" src="assets/images/producto-3.jpg" alt=""
+                        data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
                 </div>
                 <p class="p-3 text-sm text-yellow-500 bg-white sm:text-base lg:text-lg font-rubik">
                     Descripción</p>
             </div>
             <div class="col-span-12 md:col-span-6">
                 <div class="overflow-hidden">
-                    <img class="transition-all duration-300 hover:scale-110" src="assets/images/producto-4.jpg" alt="">
+                    <img class="transition-all duration-300 hover:scale-110" src="assets/images/producto-4.jpg" alt=""
+                        data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
                 </div>
                 <p class="p-3 text-sm text-yellow-500 bg-white sm:text-base lg:text-lg font-rubik">
                     Descripción</p>
             </div>
             <div class="col-span-12 md:col-span-6">
                 <div class="overflow-hidden">
-                    <img class="transition-all duration-300 hover:scale-110" src="assets/images/producto-5.jpg" alt="">
+                    <img class="transition-all duration-300 hover:scale-110" src="assets/images/producto-5.jpg" alt=""
+                        data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
                 </div>
                 <p class="p-3 text-sm text-yellow-500 bg-white sm:text-base lg:text-lg font-rubik">
                     Descripción</p>
             </div>
             <div class="col-span-12 md:col-span-6">
                 <div class="overflow-hidden">
-                    <img class="transition-all duration-300 hover:scale-110" src="assets/images/producto-6.jpg" alt="">
+                    <img class="transition-all duration-300 hover:scale-110" src="assets/images/producto-6.jpg" alt=""
+                        data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
                 </div>
                 <p class="p-3 text-sm text-yellow-500 bg-white sm:text-base lg:text-lg font-rubik">
                     Descripción</p>
@@ -176,7 +189,16 @@
                 class="inline-block font-bold transition-colors duration-200 hover:text-yellow-500">BeDesigns</a>
         </p>
     </footer>
+
+    <!-- Main JS -->
     <script src="assets/js/main.js"></script>
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>
